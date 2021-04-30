@@ -5,7 +5,7 @@ from joblib import load
 
 #load the model
 
-my_model = load('ml_model.pkl')
+my_model = load('my_model.pkl')
 
 # Create the application instance
 app = connexion.App(__name__, specification_dir="./")

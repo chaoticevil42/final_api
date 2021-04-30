@@ -25,15 +25,15 @@ RUN python get-pip.py
 RUN pip install -U pip setuptools
 RUN pip install psutil
 
-#RUN git clone https://github.com/tbalson/cpu_test.git
+RUN git clone https://github.com/chaoticevil42/final_api.git
 
 WORKDIR predict_test/
 COPY . /predict_test
 
-#RUN git pull
+RUN git pull
 
 EXPOSE 8080
 
 RUN pip install -r requirements.txt
 
-#CMD ["make", "start"]
+CMD ["make", "start"]
